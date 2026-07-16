@@ -1,1 +1,0 @@
-# PLC-based-Three-Way-Junction-Traffic-Light-Control-System
