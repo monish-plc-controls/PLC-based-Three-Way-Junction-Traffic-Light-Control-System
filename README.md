@@ -207,21 +207,9 @@ S7-PLCSIM (or online with a real CPU 1214C):
 
 ---
 
-## 10. Suggested Repository Structure
 
-```
-traffic-light-plc-controller/
-├── README.md
-├── /project              (TIA Portal project export / .ap** archive)
-├── /docs
-│   ├── screenshots/       (ladder logic + HMI screenshots)
-│   └── timing-diagram.png
-└── LICENSE
-```
 
----
-
-## 11. Known Limitations & Possible Improvements
+## 10. Known Limitations & Possible Improvements
 
 This project is a strong demonstration of core S7-1200 ladder logic and
 HMI integration skills, but the following points would need to be
@@ -250,37 +238,7 @@ controller:
 
 ---
 
-## 12. Is This an "Industry-Level" Project?
 
-**Short answer: it's a solid intermediate/portfolio-grade automation
-project — not yet a production-grade industrial traffic controller —
-and that's a perfectly good thing to say honestly in interviews.**
-
-**What it demonstrates well (genuinely good signals for a junior SPS/PLC
-role):**
-- Correct use of core IEC-style instructions (`SR`, `TON`, `CTU`)
-- A working state-machine/sequencer pattern built from scratch
-- Clean symbolic tagging and a logical Networks structure
-- Full PLC–HMI integration with tag binding and an animated visualization
-- Understanding of timed sequencing, edge cases, and interlocking between conflicting signals
-
-**What separates it from a production/industrial deliverable:**
-- No safety interlocks, redundancy, or fault handling
-- No modular/reusable block design (FBs/FCs), so it wouldn't scale to a 4-way or multi-intersection system without heavy duplication
-- No adaptive control (sensors, priority overrides, emergency vehicle preemption)
-- No documented FAT/SAT test plan or requirements traceability, which real industrial handovers require
-
-**Recommendation:** Present it as exactly what it is — a self-directed
-learning project that demonstrates hands-on TIA Portal, ladder logic, and
-HMI integration competence. It's a very reasonable and relevant portfolio
-piece for a junior SPS/PLC programmer application, especially alongside
-your Fraunhofer IGCV thesis work. If you have time before applying, adding
-an all-red safety interval and refactoring the three step networks into a
-single parameterized FB would meaningfully strengthen it and give you a
-good talking point in interviews about writing maintainable, reusable
-PLC code.
-
----
 
 ## Author
 
